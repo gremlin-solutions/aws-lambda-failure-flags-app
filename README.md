@@ -147,8 +147,6 @@ Once deployed, invoke your API Gateway endpoint. The response JSON includes:
 - **isActive / isImpacted:** Flags indicating whether Gremlin failure injections were active.
 - **timestamp:** The time the function started processing.
 
-Below is an example section for your README that shows sample fault injection payloads for Gremlin Failure Flags. This section includes examples for latency injection, a built‑in exception (ValueError), an S3 connection error, and a socket operation timeout.
-
 ## Fault Injection Examples
 
 Below are a few example payloads that Gremlin Failure Flags can return when injecting faults into your application:
