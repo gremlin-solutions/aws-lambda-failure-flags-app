@@ -18,7 +18,7 @@ def handler(event, context):
     # Invoke a Gremlin Failure Flag for demonstration.
     active, impacted, experiments = FailureFlag(
             "http-ingress",  # Name of the failure flag.
-            {},              # Labels (empty in this example).
+            {},              # Dict of labels with dynamic invocation context
             debug=True       # Debug mode enabled.
         ).invoke()
 
