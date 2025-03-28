@@ -170,7 +170,8 @@ terraform destroy --auto-approve
 
 ## Additional Resources
 
-- [Gremlin Failure Flags Documentation](https://docs.gremlin.com/)
-- [AWS Lambda Extensions Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-extensions.html)
+- [Gremlin Failure Flags Documentation](https://www.gremlin.com/docs/failure-flags-overview)
+- [Deploying Failure Flags on AWS Lambda](https://www.gremlin.com/docs/failure-flags-lambda)
+- [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 - [Terraform AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
