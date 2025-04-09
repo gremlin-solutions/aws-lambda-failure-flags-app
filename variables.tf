@@ -61,17 +61,10 @@ variable "gremlin_debug" {
 // Timeout (in seconds) for Gremlin API requests from the Lambda.
 variable "gremlin_request_timeout" {
   description = "Timeout in seconds for Gremlin API requests."
-  type        = number
-  default     = 5s
+  type        = string
+  default     = "5s"
 }
 
-
-// Timeout (in seconds) for Gremlin API requests from the Lambda.
-variable "gremlin_request_timeout" {
-  description = "Timeout in seconds for Gremlin API requests."
-  type        = number
-  default     = 5s
-}
 
 ##############################################################################
 # Local file paths for Gremlin sensitive credentials
