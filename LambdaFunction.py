@@ -3,13 +3,9 @@ import logging
 import json
 import time
 from failureflags import FailureFlag 
-from aws_xray_sdk.core import xray_recorder, patch_all
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
-# Automatically instrument supported libraries with AWS X-Ray.
-patch_all()
 
 def handler(event, context):
     now = time.gmtime()           # Capture current GMT time for a timestamp.
@@ -37,4 +33,3 @@ def handler(event, context):
             'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S', now)
         }, sort_keys=True, indent=2)
     }
-
